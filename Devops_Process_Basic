@@ -1,0 +1,92 @@
+Benefits of Devops:
+1)Rapid Delivery
+2)Reliability
+3)Scale
+4)Speed
+5)Better Collaboration
+6)Security
+
+Development Phases:
+1)Plan 
+2)Code
+3)Build
+4)Test
+5)Release
+
+Operation Phases:
+1)Release
+2)Deploy
+3)Operate
+4)Monitor
+
+Planning Phase:
+Planning phase involves a shorter goal planning. A
+scrum or agile planning is a better choice. The
+various tools you use are:
+1. Microsoft Office, Google Docs / Sheet
+2. Project Management Tools - Microsoft Project
+3. Task Management tools - Asana, Jira, Mantis
+
+Coding Phase:
+1. Text Editors and Integrated Dev Environments:
+a. Sublime, Vim, Emacs ...
+b. Eclipse, XCode, Visual Studio...
+
+GIT
+Git is a distributed version-control system for tracking changes in
+source code during software development. It is designed for
+coordinating work among programmers, but it can be used to track
+changes in any set of files. Its goals include speed, data integrity, and
+support for distributed, non-linear workflows
+
+
+Build
+Build process involves compiling code, copying the
+assets, generating config and documentation. It should
+also work on developer machine as well as on
+unattended machine.
+There are various build tools:
+1. Maven, Ant, SBT etc..
+
+Testing
+Testing involves verifying if the code is performance as
+per requirement. Unit Testing starts at coding time.
+Write test cases before you code.
+Various Types: Manual, Unit testing, Integration, Stress
+testing.
+Tools: xUnit, Selenium, Scripts
+
+Release
+Once the testing has been successfully done, the build
+is released as RC (release candidate) which is ready for
+being deployed in production.
+Tools like Jenkins are used for releasing. Also, Apache
+Maven repositories are also used for releasing the
+binaries.
+
+Deploy
+Once the release is finalized, we can deploy it using
+different automation tools:
+Puppet, Chef, Ansible, SaltStack
+Newer tools such as Docker and Kubernetes help scale
+infinitely and instantaneously.
+Docker and Kubernetes are used in testing too these
+days in CI.
+
+
+Operate
+Once the software is in production, users can use it
+and the product managers can customize it. During the
+"operating" phase, we can measure the effectiveness
+using A/B Testing. 
+
+Monitor
+We also need to monitor the various system resource
+consumptions such as Nagios.
+We must also monitor the various logs and errors
+being thrown by the system.
+See: Apache Logging System
+Visualization tools such as Grafana are used to
+represent metrics.
+
+
