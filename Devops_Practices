@@ -29,4 +29,27 @@ capabilities
 ● Each service caters to a single business
 purpose
 
+4.Infrastructure as a code
+Infrastructure is provisioned and managed using
+○ Code and
+○ Software development techniques such as
+■ Version control and
+■ Continuous integration
+
+5.Monitoring and Logging
+This helps developers and system admins to
+manage infrastructure at scale
+● Without worrying about manually setting up
+and configuring the servers and resources.
+
+6.Collaboration
+ DevOps process setup strong cultural norms
+and best practices
+● Well defined processes increase the quality
+communication and collaboration among
+various teams
+
+
+
+
 
