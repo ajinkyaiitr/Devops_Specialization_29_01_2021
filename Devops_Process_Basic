@@ -90,3 +90,26 @@ Visualization tools such as Grafana are used to
 represent metrics.
 
 
+Demo commands:
+mkdir devops
+cd devops
+
+Initializing git repository
+git init
+
+Listing all files
+ls -a
+
+Adding python file
+git add helloworld.py
+
+Commiting the git
+git commit -m "This is hello World"
+
+Seeing the status:
+git log
+git status
+
+Seeing the difference:
+git diff
+
