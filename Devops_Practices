@@ -1,0 +1,32 @@
+1.Continous Integration
+---Refers to the build and unit testing stages of the
+software release process
+Every code commit triggers an automatic workflow that
+○ Builds the code and
+○ Tests the code
+---Helps in finding and addressing bugs quicker
+
+2.Continous Delivery
+---Continuous Delivery automates the entire
+software release process.
+---Continuous Delivery extends the Continuous Integration
+---Every code-commit triggers an automatic
+workflow that
+○ Builds the code (Continuous Integration)
+○ Tests the code and (Continuous Integration)
+○ Then deploys the code to staging and then to
+production
+
+3.Microservices
+Design single application as a set of small
+services
+Each service runs its own process
+Each service communicates with other services
+through a lightweight mechanism like REST
+APIs
+● Microservices are built around business
+capabilities
+● Each service caters to a single business
+purpose
+
+
