@@ -1,0 +1,82 @@
+##Creating a branch in Github
+We can create a new branch using the command git branch <branch_name>.
+--to create a testing branch
+git branch testing
+--To checkout to testing branching, type below command
+git checkout testing
+--With -b switch we can combine the above two steps into one. For example, to create the dev branch and checkout to it at the same time, user below command
+git checkout -b dev
+
+---Practical-----
+ajinkyaiimr8809@cxln5 ~]$ cd ~/devops
+[ajinkyaiimr8809@cxln5 devops]$ git branch
+* master
+[ajinkyaiimr8809@cxln5 devops]$ git checkout master
+Already on 'master'
+[ajinkyaiimr8809@cxln5 devops]$ git branch feature_a
+[ajinkyaiimr8809@cxln5 devops]$ git checkout feature_a
+Switched to branch 'feature_a'
+
+
+Check the working tree status using git status command
+helloworld.py file should be shown as modified under Changes not staged for commit: when git status command is run
+Add the helloworld.py file to staging area using git add command
+Commit the change to branch feature_a using git commit command with the message "Added I am learning git line"
+-m flag can be used to provide message while committing
+
+git checkout feature_a
+git branch
+git status
+git add helloworld.py
+git commit -m "Added I am learning git line"
+
+####Make sure you are in ~/devops directory
+If you are not on the master branch then checkout to master branch using git checkout master command
+Check the content of helloworld.py file using cat helloworld.py command
+Merge feature_a branch into master branch using git merge <branch_name> command
+Check the content of helloworld.py file again
+#####
+git checkout master
+cat helloworld.py
+git merge feature_a
+cat helloworld.py
+
+git remote add origin https://github.com/ajinkyaiitr8809/Devops_Specialization_29_01_2021.git
+
+
+####Creating an SSH key
+
+What are SSH keys?
+
+SSH keys are used to identify yourself to GitHub without using username and password every time. SSH keys come in pair, a public key which is used by services like GitHub, and a private key which is stored only on our computer.
+
+How to generate SSH keys?
+
+Generate your ssh key pair using ssh-keygen -t rsa -b 4096 It will ask where you want to save the key. The default location is ~/.ssh/id_rsa. Press enter to continue. After this, it will ask for the passphrase. You can give an empty password by pressing enter. You will get a confirmation showing the file location.
+
+The private key is stored in ~/.ssh/id_rsa file and public key is stored in ~/.ssh/id_rsa.pub file. You can see the content of your public key using cat ~/.ssh/id_rsa.pub command. Copy the output.
+
+How to add SSH keys to your GitHub account?
+
+Login to your GitHub account. Go to GitHub Settings by clicking on your display profile and select SSH and GPG keys from the side menu. Click on Add SSH keys button. Give any name to your key and paste the copied key.
+
+Never share your private key. The public key can be shared anywhere.
+
+Note:
+
+The .ssh folder and key files should have correct permissions. You can check permissions using ls -la command and change them using chmod command
+The .ssh directory permissions should be 700 (drwx------)
+The public key (.pub file) permissions should be 644 (-rw-r--r--)
+The private key (id_rsa) permissions should be 600 (-rw-------)
+
+---You can push your repository to remote using git push command
+
+Make sure you are in ~/devops directory
+Push the master branch to the remote repository using git push -u origin master command
+
+--Cloning
+
+git clone https://github.com/singh-ashok25/webserver.git
+
+
+
