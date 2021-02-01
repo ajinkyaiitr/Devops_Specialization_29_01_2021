@@ -1,0 +1,51 @@
+Version Control
+Any kind of practice that tracks and provides control over changes to software code or document.
+● Local
+● Centralized
+● Distributed
+
+Git is a distributed version-control system for tracking changes in
+source code during software development. It is designed for
+coordinating work among programmers, but it can be used to track
+changes in any set of files. Its goals include speed, data integrity, and
+support for distributed, non-linear workflows.
+
+Design goals of Git
+○ Speed
+○ Support for non-linear development - Thousands of parallel branches
+○ Fully distributed
+○ Ability to handle large project like Linux Kernel efficiently
+
+---Generating SSH keys on windows
+
+Using Gitbash window
+○ ssh-keygen -t rsa -b 4096 # will generate ssh key
+○ it is advisable to generate aleasy 4096 bit key
+● Using Puttygen
+○ Launch Puttygen , Click on Generate key and move mouse point in white area.
+○ Save private and public in safe location
+● Copy content of file .ssh/id_rsa.pub to ssh key page of GitHub
+● Run git clone command test the key 
+
+---Git can be integrated with range of IDE like eclipse, pyCharm , VScode
+
+Below code will set the shell prompt environment .
+Working with Git - Setup Environment
+parse_git_branch() {
+git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+parse_git_dirty() {
+ [[ -n "$(git status -s 2> /dev/null)" ]] && echo "*"
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\$(parse_git_dirty)\[\033[00m\] $ "
+
+What is a Git repository?
+○ A Git repository is set of files which are needed for a project. It allows you to save versions of your
+code, which you can access when needed.
+● git init can be used to convert an existing, unversioned project to a Git repository or initialize a new,
+empty repository. Most other Git commands are not available outside of an initialized repository, so this
+is the first command to be run
+
+
+
+
